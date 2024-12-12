@@ -54,7 +54,7 @@ async def on_message(message):
         # สุ่ม 5 คำจากลิสต์
         random_words = random.sample(word_list, 5)
         # ส่งคำตอบกลับไปยังห้อง
-        await message.channel.send(f"คำสุ่ม: {', '.join(random_words)}")
+        await message.channel.send(f" {', '.join(random_words)}")
 
 # รัน Flask Web Server และ Discord Bot
 keep_alive()
